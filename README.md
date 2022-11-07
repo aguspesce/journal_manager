@@ -1,7 +1,7 @@
 # Journal manager
 
-Create a Journal manager in Python to help me to organize my project
-activities and my weeks task.
+Journal manager developed in Python to help me to organize my week's tasks and
+have a log file with my activities in different projects.
 
 It is based on low-friction task management system from
 [https://github.com/CoralineAda/lftm](https://github.com/CoralineAda/lftm)
