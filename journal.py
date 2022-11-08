@@ -113,7 +113,7 @@ def _create_task():
     # Set today's date
     today = datetime.date.today()
     # Set the start date of the week
-    start_week = today - datetime.timedelta(days=today.day - today.weekday())
+    start_week = today - datetime.timedelta(days=today.weekday())
     # Create a week dictionary with the week dates
     week = {
         name: (today + datetime.timedelta(days=-today.weekday() + i)).strftime(
