@@ -8,22 +8,9 @@ It is based on low-friction task management system from
 
 ## Folder structure
 
-```
-HOME
-|- Documentos
-    |- journal
-        |- year
-            |- projects
-            |   |- projec_name_1.md
-            |   |- project_name_2.md
-            |- tasks
-                |- year-month-day.md
-```
-
 For example:
 
 ```
-HOME
 HOME
 |- Documentos
     |- journal
