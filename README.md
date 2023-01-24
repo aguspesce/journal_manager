@@ -41,10 +41,10 @@ Use the Makefile to install it using `pip`:
 make install
 ```
 
-Now you can use the journal manager from the terminal typing:
+Now, you can use the journal manager from the terminal typing:
 
 ```
-joutnal
+journal
 ```
 
 ## License
