@@ -175,8 +175,3 @@ def _open_editor(*fnames):
         args = [editor]
     args.extend(fnames)
     subprocess.run(args, check=True)
-
-
-if __name__ == "__main__":
-
-    manager()
