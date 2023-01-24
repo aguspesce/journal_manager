@@ -27,14 +27,25 @@ HOME
 
 - Datetime
 - click
-- subprocess
 - pathlib
 - nvim as test editor (you can change it)
 
 ## How to use it
 
-Into `journal.py` you mast to change the global variable `PATH_JOURNAL` with
-the path where you want to save the journal files.
+Into `journal/journal.py` you mast to change the global variable `PATH_JOURNAL`
+with the path where you want to save the journal files.
+
+Use the Makefile to install it using `pip`:
+
+```
+make install
+```
+
+Now you can use the journal manager from the terminal typing:
+
+```
+joutnal
+```
 
 ## License
 
