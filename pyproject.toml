@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "journal"
+version = "0.0.1"
+authors = [
+    {name = "Agustina Pesce", email = "pesce.agustina@gmail.com"},
+]
+description = "Journal manager developed in Python to help me to organize my week's tasks and have a log file with my activities in different projects.It is based on low-friction task management system from https://github.com/CoralineAda/lftm"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["one", "two"]
+license = {text = "BSD-3-Clause"}
+dependencies = ["datetime", "click", "pathlib"]
+
+[project.scripts]
+journal = "journal:manager"
