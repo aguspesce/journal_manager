@@ -36,10 +36,10 @@ def create_task(today, start_current_week):
 
     Parameters:
     ----------
-    today: :class: `datetime.date`
+    today (datetime.date):
         Current date.
-    start_current_week: :class: `datetime.date`
-       Start date of the current week (Monday).
+    start_current_week (datetime.date):
+        Start date of the current week (Monday).
 
     Return:
     ------
@@ -53,8 +53,10 @@ def create_task(today, start_current_week):
         )
         for i, name in enumerate(["mon", "tue", "wed", "thu", "fri"])
     }
+
     # Set the path to the current week's task file
     file_task = get_parent_dir("tasks", today.year) / f"{start_current_week}.md"
+
     # Create the current week's task file if it doesn't exist
     if not file_task.exists():
         file_task.write_text(

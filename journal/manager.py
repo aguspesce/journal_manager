@@ -27,9 +27,10 @@ def project(name, list_names):
     """
     Create a new entry for a given project file or create it.
 
-    You have 2 options to choose: `--name` or `--list_name`.
-    - `--name` option requires specifying the project name.
-    - `--list_names` option will display a list of project names that exist in the directory.
+    You have 2 options to choose:
+    * `--name` option requires specifying the project name.
+    * `--list_names` option will display a list of project names that exist in
+        the directory.
     """
     # Get current date
     today, _, _ = dates()
@@ -45,14 +46,13 @@ def project(name, list_names):
         open_editor(project)
 
 
-mensage_flag = (
-    "Open the task file for the current week along with the task file for last
-    week."
-)
-
-
 @journal.command()
-@click.option("-lw", "--last_week", is_flag=True, help=mensage_flag)
+@click.option(
+    "-lw",
+    "--last_week",
+    is_flag=True,
+    help="Open the task file for the current week along with the file for last week.",
+)
 def task(last_week):
     """
     Create a new task file for the current week.
@@ -79,6 +79,7 @@ def task(last_week):
         else:
             print("Doesn't exist a task file for the last week to show")
             open_editor(current_week_task)
+
     # If the flag isn't used, the task file of the current week is opened
     else:
         open_editor(current_week_task)

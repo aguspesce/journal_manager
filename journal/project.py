@@ -14,14 +14,20 @@ def create_project(project_name, today):
     If it exists, a new entry is created on it.
 
     Parameters:
-        project_name (str): The name of the project.
-        today (datetime.date): The current date.
+    ----------
+        project_name (str):
+            The name of the project.
+        today (datetime.date):
+            The current date.
 
     Returns:
-        pathlib.Path: Path to de project file.
+    -------
+        pathlib.Path:
+            Path to de project file.
     """
     # Set path to the project file
     file_project = get_parent_dir("projects", today.year) / f"{project_name}.md"
+
     # Create a new project file if it doesn't exit using the template
     if not file_project.exists():
         file_project.write_text(
@@ -46,12 +52,17 @@ def get_project_names(today):
     directory.
 
     Parameters:
-        today (datetime.date): Current date.
+    ----------
+        today (datetime.date):
+            Current date.
 
     Returns:
-        list: A list with the names of all project files.
+    -------
+        list:
+            A list with the names of all project files.
     """
     # Set path to the project directory
     project_path = get_parent_dir("projects", today.year)
+
     # Return a list with the project names
     return os.listdir(project_path)

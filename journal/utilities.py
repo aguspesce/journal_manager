@@ -16,8 +16,8 @@ else:
 
 def dates():
     """
-    Return a tuple with the today's date, the start date of the
-    current week (Monday) and the start date of the last week (last Monday)
+    Return a tuple with the today's date, the start date of the current week
+    (Monday) and the start date of the last week (last Monday).
     """
     # Set today's date
     today = datetime.date.today()
@@ -25,15 +25,17 @@ def dates():
     start_current_week = today - datetime.timedelta(days=today.weekday())
     # Set the start date of the last week
     start_last_week = start_current_week - datetime.timedelta(weeks=1)
+
     return today, start_current_week, start_last_week
 
 
 def get_parent_dir(dirname, year):
     """
-    Return path to a new custom directory or create directory if missing
+    Return path to a new custom directory or create directory if missing.
     """
     # Create path to the year directory
     dirpath = PATH_JOURNAL / f"{year} / {dirname}"
+
     # Create directory
     if not dirpath.exists():
         dirpath.mkdir(parents=True)
