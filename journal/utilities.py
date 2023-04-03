@@ -4,7 +4,7 @@ import subprocess
 from pathlib import Path
 
 # Path to journal directory to save the files
-PATH_JOURNAL = Path.home() / "Documentos/journal_reformat"
+PATH_JOURNAL = Path.home() / "Documentos/journal"
 
 # Set editor variable.
 # If the environment variable doesn't exist, it will use neovim as editor
