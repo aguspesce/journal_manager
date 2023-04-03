@@ -1,1 +1,1 @@
-from .manager import journal
+from .cli import main

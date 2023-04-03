@@ -23,7 +23,7 @@ def main() -> None:
     is_flag=True,
     help="List the name of all projects that exist in the directory.",
 )
-def project(name: str, list_names: bool) -> None:
+def project(name: str, list_names) -> None:
     """
     Create a new entry for a given project file or create it.
 
