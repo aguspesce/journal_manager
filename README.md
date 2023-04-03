@@ -28,7 +28,8 @@ HOME
 - Datetime
 - click
 - pathlib
-- nvim as test editor (you can change it)
+- nvim as test editor (you can change it).
+- mypy to check the type annotation.
 
 ## How to use it
 
