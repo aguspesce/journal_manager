@@ -1,14 +1,16 @@
 # Journal manager
 
-Journal manager developed in Python to help me to organize my week's tasks and
-have a log file with my activities in different projects.
+The Journal Manager is a custom command-line tool developed using Python that
+helps manage and organize weekly tasks and activity logs across multiple projects.
 
 It is based on low-friction task management system from
-[https://github.com/CoralineAda/lftm](https://github.com/CoralineAda/lftm)
+[https://github.com/CoralineAda/lftm](https://github.com/CoralineAda/lftm), 
+which ensures that users can easily organize their tasks and projects while 
+keeping track of their progress.
 
 ## Folder structure
 
-For example:
+Here is an example of the folder structure:
 
 ```
 HOME
@@ -25,27 +27,34 @@ HOME
 
 ## Dependencies
 
+The Journal Manager requires the following dependencies:
+
 - Datetime
 - click
 - pathlib
 - nvim as test editor (you can change it).
 - mypy to check the type annotation.
+- Neovim as test editor (you can change it)
 
-## How to use it
+## How to use
 
-Into `journal/journal.py` you mast to change the global variable `PATH_JOURNAL`
-with the path where you want to save the journal files.
+To use the Journal Manager, follow these steps:
 
-Use the Makefile to install it using `pip`:
-
+1. Open the `journal/journal.py` file, and locate the global variable  PATH_JOURNAL. Change its value to the path where you want to save your journal files.
+2. Install all the necessary dependencies.
+3. Use the Makefile to install the Journal Manager using the following command:
 ```
 make install
 ```
 
-Now, you can use the journal manager from the terminal typing:
-
+Now, you can use the Journal Manager from the terminal by typing :
 ```
 journal
+```
+
+To see the different options available with the Journal Manager, type the following command:
+```
+journal --help
 ```
 
 ## License
