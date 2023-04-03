@@ -7,7 +7,7 @@ from pathlib import Path
 PATH_JOURNAL = Path.home() / "Documentos/journal_reformat"
 
 # Set editor variable.
-# If the environment variable doesn't exist, it will use nvim as editor
+# If the environment variable doesn't exist, it will use neovim as editor
 if os.getenv("EDITOR") is None:
     editor = "nvim"
 else:
@@ -33,7 +33,7 @@ def get_parent_dir(dirname, year):
     Return path to a new custom directory or create directory if missing
     """
     # Create path to the year directory
-    dirpath = PATH_JOURNAL / f"{year}" / dirname
+    dirpath = PATH_JOURNAL / f"{year} / {dirname}"
     # Create directory
     if not dirpath.exists():
         dirpath.mkdir(parents=True)
