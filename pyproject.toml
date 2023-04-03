@@ -8,12 +8,14 @@ version = "0.0.1"
 authors = [
     {name = "Agustina Pesce", email = "pesce.agustina@gmail.com"},
 ]
-description = "Journal manager developed in Python to help me to organize my week's tasks and have a log file with my activities in different projects.It is based on low-friction task management system from https://github.com/CoralineAda/lftm"
+description = "Journal manager developed in Python to help me to organize my week's tasks and have a log file with my activities in different projects."
 readme = "README.md"
-requires-python = ">=3.7"
-keywords = ["one", "two"]
+requires-python = ">=3.10"
 license = {text = "BSD-3-Clause"}
 dependencies = ["datetime", "click", "pathlib"]
 
+[tool.setuptools.packages]
+find = {}
+
 [project.scripts]
-journal = "journal:journal"
+journal = "journal:main"
