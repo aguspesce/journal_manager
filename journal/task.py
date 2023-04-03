@@ -1,4 +1,5 @@
 import datetime
+from pathlib import Path
 from utilities import get_parent_dir
 
 # Template for a new task
@@ -29,7 +30,7 @@ TASK_TEMPLATE = """
 """.strip()
 
 
-def create_task(today, start_current_week):
+def create_task(today: datetime.date, start_current_week: datetime.date) -> Path:
     """
     Create a new that file for the current_week or create a new task entry if the file
     already exists.

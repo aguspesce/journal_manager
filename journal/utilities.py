@@ -14,7 +14,7 @@ else:
     editor = os.getenv("EDITOR")
 
 
-def dates():
+def dates() -> tuple:
     """
     Return a tuple with the today's date, the start date of the current week
     (Monday) and the start date of the last week (last Monday).
@@ -29,7 +29,7 @@ def dates():
     return today, start_current_week, start_last_week
 
 
-def get_parent_dir(dirname, year):
+def get_parent_dir(dirname: str, year: int) -> Path:
     """
     Return path to a new custom directory or create directory if missing.
     """

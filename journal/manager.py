@@ -5,7 +5,7 @@ from task import create_task
 
 
 @click.group()
-def journal():
+def journal() -> None:
     """
     CLI tool to create and open project and task files for journaling.
     All files are saved in the `Documentos/journal` directory.
@@ -23,7 +23,7 @@ def journal():
     is_flag=True,
     help="List the name of all projects that exist in the directory.",
 )
-def project(name, list_names):
+def project(name: str, list_names: bool) -> None:
     """
     Create a new entry for a given project file or create it.
 
@@ -53,7 +53,7 @@ def project(name, list_names):
     is_flag=True,
     help="Open the task file for the current week along with the file for last week.",
 )
-def task(last_week):
+def task(last_week: bool) -> None:
     """
     Create a new task file for the current week.
 

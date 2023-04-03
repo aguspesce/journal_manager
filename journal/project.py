@@ -1,5 +1,8 @@
-from utilities import get_parent_dir
 import os
+import datetime
+from pathlib import Path
+from utilities import get_parent_dir
+
 
 # Template for a new project
 PROJECT_TEMPLATE = """
@@ -8,7 +11,7 @@ PROJECT_TEMPLATE = """
 """.strip()
 
 
-def create_project(project_name, today):
+def create_project(project_name: str, today: datetime.date) -> Path:
     """
     Create a new project file if it doesn't exist.
     If it exists, a new entry is created on it.
@@ -46,7 +49,7 @@ def create_project(project_name, today):
     return file_project
 
 
-def get_project_names(today):
+def get_project_names(today: datetime.date) -> list:
     """
     Return a list with the name of all the project files that are in the project
     directory.
