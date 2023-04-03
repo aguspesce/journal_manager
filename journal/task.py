@@ -44,7 +44,7 @@ def create_task(today, start_current_week):
     Return:
     ------
     file_task:
-        Write a new entry in the task file.
+        Path to the task file.
     """
     # Create a week dictionary with the week dates
     week = {
