@@ -16,4 +16,4 @@ license = {text = "BSD-3-Clause"}
 dependencies = ["datetime", "click", "pathlib"]
 
 [project.scripts]
-journal = "journal:manager"
+journal = "journal:journal"

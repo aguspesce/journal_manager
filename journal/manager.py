@@ -1,7 +1,7 @@
 import click
-from utilities import dates, get_parent_dir, open_editor, PATH_JOURNAL
-from project import create_project, get_project_names
-from task import create_task
+from .utilities import dates, get_parent_dir, open_editor, PATH_JOURNAL
+from .project import create_project, get_project_names
+from .task import create_task
 
 
 @click.group()
@@ -83,7 +83,3 @@ def task(last_week: bool) -> None:
     # If the flag isn't used, the task file of the current week is opened
     else:
         open_editor(current_week_task)
-
-
-if __name__ == "__main__":
-    journal()

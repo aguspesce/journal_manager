@@ -1,7 +1,7 @@
 import os
 import datetime
 from pathlib import Path
-from utilities import get_parent_dir
+from .utilities import get_parent_dir
 
 
 # Template for a new project
