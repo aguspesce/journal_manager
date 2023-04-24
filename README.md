@@ -32,6 +32,8 @@ The Journal Manager requires the following dependencies:
 - Datetime
 - click
 - pathlib
+- nvim as test editor (you can change it).
+- mypy to check the type annotation.
 - Neovim as test editor (you can change it)
 
 ## How to use

@@ -1,8 +1,12 @@
 help:
 	@echo "Commands:"
 	@echo ""
-	@echo "  install   install in editable mode"
+	@echo " install  Install in editable mode."
+	@echo " check    Check type annotation. Remember to intall mypy with pip."
 	@echo ""
 
 install:
-	pip install .
+	pip install --no-deps -e .
+
+check:
+	mypy journal/
