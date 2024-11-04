@@ -8,7 +8,7 @@ PATH_JOURNAL = Path.home() / "Documentos/journal"
 
 # Set editor variable.
 # If the environment variable doesn't exist, it will use neovim as editor
-editor : None | str
+editor: None | str
 if os.getenv("EDITOR") is None:
     editor = "nvim"
 else:

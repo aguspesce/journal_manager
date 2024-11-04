@@ -1,7 +1,8 @@
 import click
-from .utilities import dates, get_parent_dir, open_editor, PATH_JOURNAL
+
 from .project import create_project, get_project_names
 from .task import create_task
+from .utilities import PATH_JOURNAL, dates, get_parent_dir, open_editor
 
 
 @click.group()
