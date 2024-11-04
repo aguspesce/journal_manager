@@ -1,5 +1,6 @@
 import datetime
 from pathlib import Path
+
 from .utilities import get_parent_dir
 
 # Template for a new task
@@ -9,7 +10,7 @@ TASK_TEMPLATE = """
 ### {mon}
 ### {tue}
 ### {wed}
-### {tue}
+### {thu}
 ### {fri}
 
 ---
